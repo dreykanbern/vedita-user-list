@@ -1,16 +1,21 @@
 <template>
- <div>Hellow world</div>
+  <div class="container">
+    <UserList></UserList>
+  </div>
 </template>
 
-<style lang='scss' src="./app.scss">
-</style>
-
 <script>
+import UserList from "@/components/UserList/UserList";
+
 export default {
   name: 'App',
+  components: {UserList,},
 
   data: () => ({
     //
   }),
 };
 </script>
+
+<style lang='scss' src="./styles/app.scss">
+</style>

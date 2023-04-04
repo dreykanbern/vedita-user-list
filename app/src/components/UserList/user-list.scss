@@ -1,0 +1,48 @@
+@import "./src/styles/variables";
+@import "./src/styles/mixins";
+@import '~vuetify/src/styles/styles.sass';
+
+.user-list {
+  display: flex;
+  width: inherit;
+  height: min-content;
+  background: white;
+  padding: 32px;
+  &__user-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: inherit;
+  }
+}
+
+.user-list-header {
+  &__list-status {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+.list-status {
+  &__h1 {
+    font-size: 20px;
+    letter-spacing: 0.15px;
+    font-weight: 600;
+  }
+  &__p {
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    font-weight: 400;
+  }
+}
+
+//Vuetify
+
+.theme--light.v-btn.v-btn--has-bg {
+  background-color: $primary-color;
+}
+
+.theme--light.v-btn {
+  color: white;
+}

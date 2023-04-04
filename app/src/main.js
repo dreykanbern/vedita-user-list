@@ -3,6 +3,10 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify'
+// Подключаем стили Vuetify
+import 'vuetify/dist/vuetify.min.css'
+// Подключаем глобальные стили
+import './styles/app.scss'
 
 Vue.config.productionTip = false
 

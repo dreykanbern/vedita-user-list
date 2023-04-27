@@ -1,21 +1,14 @@
 <template>
-  <div class="container">
-    <UserList></UserList>
-  </div>
+    <router-view></router-view>
 </template>
 
 <script>
-import UserList from "@/components/UserList/UserList";
+import router from "@/router/router";
 
 export default {
   name: 'App',
-  components: {UserList,},
-
-  data: () => ({
-    //
-  }),
+  components: {router},
 };
 </script>
 
-<style lang='scss' src="./styles/app.scss">
-</style>
+<style lang='scss' src="./styles/app.scss"></style>

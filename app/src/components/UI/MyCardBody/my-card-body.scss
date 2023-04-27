@@ -1,0 +1,20 @@
+@import "./src/styles/variables";
+@import "./src/styles/mixins";
+
+.container {
+  display: flex;
+  width: 1200px;
+  margin: 32px auto 0 auto;
+  padding: 0;
+  flex-direction: column;
+}
+
+.my-card-body {
+  display: flex;
+  width: inherit;
+  height: min-content;
+  background: white;
+  padding: 32px;
+  border-radius: $model-border-radius;
+  box-shadow: $model-shadow;
+}

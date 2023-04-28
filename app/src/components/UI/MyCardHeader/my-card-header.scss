@@ -1,0 +1,28 @@
+@import "./src/styles/variables";
+@import "./src/styles/mixins";
+@import '~vuetify/src/styles/styles';
+
+.my-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: inherit;
+  &__header-status {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+.header-status {
+  &__h1 {
+    font-size: 20px;
+    letter-spacing: 0.15px;
+    font-weight: 600;
+  }
+  &__p {
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    font-weight: 400;
+  }
+}

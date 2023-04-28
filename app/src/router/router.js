@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import UserList from "@/views/UserList/UserList";
-import UserCreated from "@/views/UserCreated/UserCreated";
+import UserForm from "@/views/UserForn/UserForm";
 
 Vue.use(VueRouter)
 
@@ -13,9 +13,9 @@ const routes = [
     component: UserList
   },
   {
-    path: '/user-created',
-    name: 'UserCreated',
-    component: UserCreated
+    path: '/user-form',
+    name: 'UserForm',
+    component: UserForm
   },
 
 ]

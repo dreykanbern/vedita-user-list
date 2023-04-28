@@ -1,44 +1,34 @@
 <template>
   <my-card-body>
-
-    <div class="user-list-header">
-
-      <div class="user-list-header__list-status">
-        <h1 class="list-status__h1 main-text-color">{{UserListText.header}}</h1>
-        <p class="list-status__p sub-gray-color">{{UserListText.status}}</p>
-      </div>
-
-      <my-button depressed :onClick="goToUserCreated">
-        {{UserListText.button}}
-      </my-button>
-
-    </div>
-
+    <my-card-header
+        :onClick="goToUserCreated"
+        status="Не добавлены"
+        header="Список пользователей"
+        button="Добавить"
+        depressed
+    ></my-card-header>
   </my-card-body>
 </template>
 
 <script>
-import myCardBody from "@/components/UI/MyCardBody/MyCardBody";
+import MyCardHeader from "@/components/UI/MyCardHeader/MyCardHeader";
+import MyCardBody from "@/components/UI/MyCardBody/MyCardBody";
 import MyButton from "@/components/UI/MyButton/MyButton";
 import router from "@/router/router";
 
 export default {
   name: "UserList",
   components: {
-    router, myCardBody, MyButton,
+    router, MyCardBody, MyButton, MyCardHeader,
   },
   data  () {
     return {
-      UserListText: {
-        header: 'Список пользователей',
-        status: 'Не добавлены',
-        button: 'Добавить',
-      },
+      //если нужно что-то в локалке
     }
   },
   methods: {
     goToUserCreated () {
-      router.push({ name: 'UserCreated' })
+      router.push({ name: 'UserForm' })
     }
   },
 }

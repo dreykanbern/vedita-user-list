@@ -2,28 +2,3 @@
 @import "../../styles/mixins";
 @import '../../../node_modules/vuetify/src/styles/styles';
 
-.user-list-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: inherit;
-    &__list-status {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-  }
-
-.list-status {
-  &__h1 {
-    font-size: 20px;
-    letter-spacing: 0.15px;
-    font-weight: 600;
-  }
-  &__p {
-    font-size: 14px;
-    letter-spacing: 0.25px;
-    font-weight: 400;
-  }
-}
-
